@@ -1,0 +1,13 @@
+body{
+    background-image: url('assets/sfondo_linea.png');
+    background-repeat: no-repeat;
+}
+
+.citazione {
+    position: absolute;
+    font-family: "Iter", sans-serif;
+    font-style: bold;
+    top: 10%;
+    left: 5%;
+    font-size: 36pt;
+}
