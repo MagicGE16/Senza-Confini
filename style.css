@@ -1,13 +1,184 @@
-body{
-    background-image: url('assets/sfondo_linea.png');
-    background-repeat: no-repeat;
+/*------------------------- VARI FONTS -------------------------*/
+
+@font-face {
+    font-family: "Stolzl";
+    src: url('assets/fonts/Stolzl-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.citazione {
-    position: absolute;
+.stolzl_font_type {
+    font-family: "Stolzl", sans-serif;
+    font-weight: bold;
+    font-size: 55pt;
+    color: #0e2643;
+}
+
+/*------------------------- BODY -------------------------*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(assets/sfondo_linea.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*------------------------- TESTO -------------------------*/
+
+#citazione {
     font-family: "Iter", sans-serif;
-    font-style: bold;
-    top: 10%;
-    left: 5%;
+    font-style: italic;
     font-size: 36pt;
+    color: #0e2643;
+    grid-area: 1/1;
+    place-self: flex-start left;
+    scale: 0.8;
+}
+
+#mission_paragrafo {
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 20pt;
+    color: #0e2643;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+#condivisione_paragrafo {
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 20pt;
+    color: #0e2643;
+    margin-top: 20%;
+    margin-left: 50%;
+}
+
+#rispetto_paragrafo {
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 20pt;
+    color: #0e2643;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+#pragmatismo_paragrafo {
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 20pt;
+    color: #0e2643;
+    margin-top: 15%;
+    margin-left: 50%;
+}
+
+#storie_paragrafo {
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 20pt;
+    color: #0e2643;
+    margin-top: 11%;
+    margin-left: 10%;
+}
+
+/*----------------------------------IMMAGINI------------------------------*/
+
+.images {
+    height: 100%;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.images #male{
+    margin-top: 20%;
+    width: 55%;
+    grid-area: 1/1;
+    place-self: center left;
+    z-index: 11;
+}
+
+.images #female{
+    width: 80%;
+    grid-area: 1/1;
+    place-self: flex-end right;
+    z-index: 10;
+}
+
+.images #bush{
+    width: 80%;
+    grid-area: 1/1;
+    place-self: flex-end left;
+    z-index: 12;
+}
+
+.images #cloud{
+    position: relative;
+    width: 65%;
+    grid-area: 1/1;
+    place-self: flex-start right;
+    z-index: 9;
+}
+
+#cloud2{
+    margin-top: 10%;
+    width: 100%;
+}
+
+
+
+/*---------------------------------- ANIMAZIONI ------------------------------*/
+
+.text_swoop_left_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.text_swoop_left_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.text_fade_in_anim_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 3s;
+}
+
+.text_fade_in_anim_show {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.text_swoop_right_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(80%);
+    transition: all 3s;
+}
+
+.text_swoop_right_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.text_swoop_up_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 3s;
+}
+
+.text_swoop_up_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
