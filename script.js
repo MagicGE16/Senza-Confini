@@ -61,3 +61,34 @@ const observer_four = new IntersectionObserver((entries) => {
 
 const hiddenElements_four = document.querySelectorAll('.text_swoop_up_hidden');
 hiddenElements_four.forEach((el) => observer_four.observe(el));
+
+
+
+document.getElementById("testo_iniziale_senzaconfini").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+document.getElementById("mission_button").addEventListener("click", function() {
+    document.getElementById("mission_paragrafo").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("storie_button").addEventListener("click", function() {
+    document.getElementById("storie_paragrafo").scrollIntoView({
+        behavior: "smooth"
+        });
+        });
+        
+/*
+document.getElementById("mission_button").addEventListener("click", function() {
+    document.getElementById("mission_paragrafo").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+*/
