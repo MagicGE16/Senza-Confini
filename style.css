@@ -20,6 +20,33 @@
 
 /*------------------------- BODY -------------------------*/
 
+/*
+.selectEnable { 
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+*/
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background-color: #daa002;
+    color: black;
+}
+
+p {
+    z-index: 13;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -59,8 +86,16 @@ body {
     justify-content: space-between;
     position: fixed;
     z-index: 100;
-
-    background-color: white;
+    
+    border-style: solid;
+    border-radius: 2%;
+    border-color: #D17440;
+    border-top: #ffffff;
+    border-left: #ffffff;
+    border-right: #ffffff;
+    
+    background-color: rgb(250, 243, 223);
+    
 }
 
 #testo_iniziale_senzaconfini,
@@ -82,11 +117,12 @@ button {
     scale: 0.8;
 }
 
+
 #mission_paragrafo {
     font-family: "Iter", sans-serif;
     font-size: 20pt;
     color: #172742;
-    margin-top: 7rem;
+    margin-top: 9.5rem;
     margin-left: 13rem;
 
     grid-area: 1/1;
@@ -154,13 +190,16 @@ button {
 }
 
 #frank{
-    position:relative;
+    position: relative;
     grid-area: 1/1;
     place-self: flex-start right;
     z-index: 12;
-
-    right: 15%;
-
+    color: #172742;
+    right: 22%;
+    top: 15%;
+    scale: 0.8;
+    text-align: center;
+    line-height: 3.5rem;
 }
 
 #sumaya {
@@ -168,7 +207,11 @@ button {
     grid-area: 1/1;
     place-self: flex-end right;
     z-index: 12;
-
+    color: #172742;
+    scale: 0.8;
+    text-align: center;
+    right: 8%;
+    line-height: 3.5rem;
 }
 
 #abdou{
@@ -176,10 +219,71 @@ button {
     grid-area: 1/1;
     place-self: center left;
     z-index: 12;
-
+    color: #172742;
     left: 10%;
-    top: 5%;
+    top: 35%;
+    scale: 0.8;
+    text-align: center;
+    line-height: 3.5rem;
 }
+
+#senzaConfini{
+    position: relative;
+    grid-area: 1/1;
+    place-self: center left;
+}
+
+#contattaci{
+    position: relative;
+    grid-area: 1/1;
+    place-self: center left;
+    top: 40%;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    place-items: center;
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 15pt;
+    color: #172742;
+    
+}
+
+#footer #senza_confini_footer{
+    position: relative;
+    grid-area: 1/1;
+    place-self: center center;
+}
+
+#footer #recap{
+    position: relative;
+    grid-area: 2/1;
+    place-self: center center;
+    
+}
+
+#footer #policy{
+    position: relative;
+    grid-area: 2/2;
+    place-self: center center;
+    
+}
+
+#footer #contatti_titolo{
+    position: relative;
+    grid-area: 1/3;
+    place-self: center center;
+}
+
+#footer #contatti{
+    position: relative;
+    grid-area: 2/3;
+    place-self: center center;
+    
+}
+
 /*----------------------------------IMMAGINI------------------------------*/
 
 .images {
@@ -228,7 +332,7 @@ button {
     width: 100%;
 }
 
-.linea {
+#linea {
     height: fit-content;
     display: grid;
 
@@ -239,7 +343,7 @@ button {
     justify-content: space-evenly;
 }
 
-.linea #world {
+#linea #world {
     position: relative;
     right: 20%;
     width: 30%;
@@ -247,23 +351,23 @@ button {
     place-self: center right;
 }
 
-.linea #palla1 {
+#linea #palla1 {
     left: 4.75%;
-    top: 20%;
+    top: 25%;
     grid-area: 1/1;
     place-self: flex-start left;
 }
 
-.linea #butterfly {
+#linea #butterfly {
     position: relative;
-    top: 8.5%;
+    top: 12.5%;
     left: 4.75%;
     width: 5%;
     grid-area: 1/1;
     place-self: flex-start left;
 }
 
-.linea #collab {
+#linea #collab {
     position: relative;
     top: 30%;
     left: 15%;
@@ -272,7 +376,7 @@ button {
     place-self: center left;
 }
 
-.linea #palla2 {
+#linea #palla2 {
     top: -30%;
     right: 5%;
     grid-area: 2/1;
@@ -280,7 +384,7 @@ button {
 
 }
 
-.linea #respect {
+#linea #respect {
     position: relative;
     top: 15%;
     right: 20%;
@@ -289,7 +393,7 @@ button {
     place-self: center right;
 }
 
-.linea #palla3 {
+#linea #palla3 {
     top: -30%;
     right: 5%;
     grid-area: 3/1;
@@ -297,7 +401,7 @@ button {
 
 }
 
-.linea #teamwork {
+#linea #teamwork {
     position: relative;
     top: -5%;
     left: 15%;
@@ -306,7 +410,7 @@ button {
     place-self: center left;
 }
 
-.linea #palla4 {
+#linea #palla4 {
     top: -55%;
     right: 5%;
     grid-area: 4/1;
@@ -314,7 +418,7 @@ button {
 
 }
 
-.linea #palla5 {
+#linea #palla5 {
     top: -50%;
     left: 4%;
     grid-area: 5/1;
@@ -345,6 +449,48 @@ button {
     width: 50%;
     grid-area: 1/1;
     place-self: center center;
+}
+
+#world_stories .buttonS {
+    background-color: #D17440;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#fine_sito{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    width: fit-content;
+}
+
+
+#hill{
+    position: relative;
+    height: 50%;
+    width: 70%;
+    grid-area: 1/1;
+    left: 5%;
+    place-self: flex-end right;
+}
+
+#teamGoals{
+    position: relative;
+    grid-area: 1/1;
+    top: 8%;
+    left: 15%;
+    place-self: center center;
+
+}
+
+.icon{
+    width: 5%;
+    height: 5%;
 }
 
 
@@ -400,9 +546,23 @@ button {
     transform: translateY(0);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     body {
         transform: scale(.4);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        transform: scale(.3);
+    }
+
+}
+
+@media screen and (max-width: 200px) {
+    body {
+        transform: scale(.2);
     }
 
 }
