@@ -57,7 +57,8 @@ body {
     width: 100vw;
     background-image: url(assets/sfondo_linea.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+
     overflow-x: hidden;
 }
 
@@ -135,7 +136,7 @@ button {
     font-size: 20pt;
     color: #172742;
     margin-top: 25rem;
-    margin-right: 15rem;
+    margin-right: 20rem;
 
     grid-area: 2/1;
     place-self: center right;
@@ -159,7 +160,7 @@ button {
     font-size: 20pt;
     color: #172742;
     margin-top: 5rem;
-    margin-right: 15rem;
+    margin-right: 20rem;
 
     grid-area: 4/1;
     place-self: center right;
@@ -293,7 +294,7 @@ button {
     /* padding-top: 6rem; */
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
     place-items: center;
 }
 
@@ -337,7 +338,7 @@ button {
     display: grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr;
+    grid-template-rows: repeat(auto-fit, 5fr);
     place-items: center;
 
     justify-content: space-evenly;
@@ -345,10 +346,12 @@ button {
 
 #linea #world {
     position: relative;
-    right: 20%;
+    right: 15%;
     width: 30%;
+    top: 12%;
     grid-area: 1/1;
     place-self: center right;
+    scale: 1.4;
 }
 
 #linea #palla1 {
@@ -369,8 +372,8 @@ button {
 
 #linea #collab {
     position: relative;
-    top: 30%;
-    left: 15%;
+    top: 21%;
+    left: 12%;
     width: 35%;
     grid-area: 2/1;
     place-self: center left;
@@ -404,7 +407,7 @@ button {
 #linea #teamwork {
     position: relative;
     top: -5%;
-    left: 15%;
+    left: 10%;
     width: 35%;
     grid-area: 4/1;
     place-self: center left;
@@ -431,7 +434,7 @@ button {
     display: grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
     place-items: center;    
 }
 
@@ -464,7 +467,7 @@ button {
 #fine_sito{
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
     place-items: center;
     width: fit-content;
 }
@@ -544,25 +547,4 @@ button {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
-}
-
-@media screen and (max-width: 1024px) {
-    body {
-        transform: scale(.4);
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-    body {
-        transform: scale(.3);
-    }
-
-}
-
-@media screen and (max-width: 200px) {
-    body {
-        transform: scale(.2);
-    }
-
 }

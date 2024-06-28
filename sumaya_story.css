@@ -1,0 +1,309 @@
+/*------------------------- VARI FONTS -------------------------*/
+
+@font-face {
+    font-family: "Stolzl";
+    src: url('assets/fonts/Stolzl-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.stolzl_font_type {
+    font-family: "Stolzl", sans-serif;
+    font-weight: bold;
+}
+
+.stolzl_font_type_grosso {
+    font-family: "Stolzl", sans-serif;
+    font-weight: bold;
+    font-size: 55pt;
+}
+
+/*------------------------- BODY -------------------------*/
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background-color: #a6b9d3;
+    color: black;
+}
+
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: "Stolzl", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Iter", sans-serif;
+    font-weight: lighter;
+    font-size: 25pt;
+    color: #172742;
+    z-index: 9;
+    scale: 0.7;
+}
+
+#storia_container {
+    width: fit-content;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 3fr);
+    grid-template-columns: repeat(auto-fit, 10fr);
+    
+    background-image: url(assets/sumaya/sfondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#linea_con_pallini {
+    grid-column: 1 / 11;
+    grid-row: 2 / 4;
+    margin-left: 4rem;
+}
+
+#torna_all_inizio_button{
+    position: fixed;
+    bottom: 50px;
+    left: 30px;
+    z-index: 10;
+
+    background-color: #D17440;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/*------------------------- TESTO -------------------------*/
+
+#testo_iniziale_senzaconfini,
+button {
+    padding: 1rem 2rem;
+    font-family: "Iter", sans-serif;
+    font-style: normal;
+    font-size: 23pt;
+    color: #D17440;
+}
+
+
+#titolo_storia {
+    position: relative;
+    font-size: 75pt;
+    grid-area: 2/1;
+    place-self: center;
+    top: 5%;
+}
+
+#index {
+    grid-area: 1/1;
+}
+
+#sumaya_nasce {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 2/2;
+    place-self: flex-start left;
+    left: 10%;
+}
+
+#born_gif {
+    position: relative;
+    grid-area: 3/2;
+    width: 60%;
+    place-self: flex-start left;
+    bottom: 40%;
+    
+}
+
+#baby_gif {
+    position: relative;
+    grid-area: 3/3;
+    width: 60%;
+    place-self: center;
+    bottom: 55%;
+    right: 30%;
+}
+
+#sumaya_senza_cittadinanza {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 3/4;
+    place-self: flex-start left;
+    right: 5%;
+    top: 10%;
+}
+
+#nerd_gif {
+    position: relative;
+    grid-area: 2/4;
+    width: 60%;
+    place-self: center;
+    right: 10%;
+}
+
+#fumetti{
+    position: relative;
+    grid-area: 2/4;
+    width: 50%;
+    place-self: center;
+    right: 8%;
+    bottom: 28%;
+}
+
+#sumaya_frequenta_scuola {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 2/5;
+    place-self: flex-start left;
+}
+
+#study_gif {
+    position: relative;
+    grid-area: 3/5;
+    right: 40%;
+    bottom: 55%;
+    width: 60%;
+    place-self: flex-start right;
+}
+
+#together_gif {
+    position: relative;
+    grid-area: 2/5;
+    right: 5%;
+    bottom: 15%;
+    width: 50%;
+    place-self: flex-end right;
+}
+
+#sumaya_non_festosa {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 2/6;
+    place-self: center;
+    bottom: 25%;
+    right: 10%;
+
+}
+
+#soccer_gif {
+    position: relative;
+    grid-area: 3/6;
+    width: 75%;
+    place-self: center;
+    bottom: 55%;
+    left: 35%;
+
+}
+
+#nuvole1{
+    position: relative;
+    grid-area: 3/6;
+    place-self: flex-start right;
+    bottom: 75%;
+    left: 35%;
+}
+
+
+#sumaya_mai_stata_bangladesh {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 3/7;
+    left: 7%;
+    bottom: 72%;
+    place-self: center;
+}
+
+#opinion_gif {
+    position: relative;
+    grid-area: 3/7;
+    width: 50%;
+    left: 45%;
+    bottom: 40%;
+    place-self: center;
+}
+
+#islam_gif {
+    position: relative;
+    grid-area: 2/7;
+    width: 50%;
+    left: 100%;
+    top: 20%;
+    place-self: center;
+}
+
+#sumaya_fuori_scuola {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 3/8;
+    left: 51%;
+    bottom: 30%;
+    place-self: center;
+}
+
+#brother_gif {
+    position: relative;
+    grid-area: 2/8;
+    width: 50%;
+    left: 60%;
+    bottom: 20%;
+    place-self: center;
+}
+
+#sumaya_no_hobby {
+    position: relative;
+    font-size: 25pt;
+    grid-area: 2/9;
+    left: 54%;
+    bottom: 13%;
+    place-self: center;
+}
+
+#ramadan_gif {
+    position: relative;
+    grid-area: 3/10;
+    width: 60%;
+    bottom: 50%;
+    right: 5%;
+    place-self: center;
+}
+
+/*---------------------------------- ANIMAZIONI ------------------------------*/
+
+.text_fade_in_anim_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 3s;
+}
+
+.text_fade_in_anim_show {
+    opacity: 1;
+    filter: blur(0);
+}
