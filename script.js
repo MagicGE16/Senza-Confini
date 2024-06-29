@@ -3,7 +3,7 @@
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('text_swoop_left_show');
         } else {
             entry.target.classList.remove('text_swoop_left_show');
@@ -19,7 +19,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const observer_two = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('text_fade_in_anim_show');
         } else {
             entry.target.classList.remove('text_fade_in_anim_show');
@@ -35,7 +35,7 @@ hiddenElements_two.forEach((el) => observer_two.observe(el));
 
 const observer_three = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('text_swoop_right_show');
         } else {
             entry.target.classList.remove('text_swoop_right_show');
@@ -51,7 +51,7 @@ hiddenElements_three.forEach((el) => observer_three.observe(el));
 
 const observer_four = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('text_swoop_up_show');
         } else {
             entry.target.classList.remove('text_swoop_up_show');
@@ -65,7 +65,7 @@ hiddenElements_four.forEach((el) => observer_four.observe(el));
 
 //-------------------------------------- TASTI NAVBAR \/ ------------------------------------------
 
-document.getElementById("testo_iniziale_senzaconfini").addEventListener("click", function() {
+document.getElementById("testo_iniziale_senzaconfini").addEventListener("click", function () {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -73,18 +73,18 @@ document.getElementById("testo_iniziale_senzaconfini").addEventListener("click",
 });
 
 
-document.getElementById("mission_button").addEventListener("click", function() {
+document.getElementById("mission_button").addEventListener("click", function () {
     document.getElementById("linea").scrollIntoView({
         behavior: "smooth"
     });
 });
 
-document.getElementById("storie_button").addEventListener("click", function() {
+document.getElementById("storie_button").addEventListener("click", function () {
     document.getElementById("world_stories").scrollIntoView({
         behavior: "smooth"
-        });
-        });
-        
+    });
+});
+
 /*
 document.getElementById("about_button").addEventListener("click", function() {
     document.getElementById("mission_paragrafo").scrollIntoView({
@@ -94,9 +94,11 @@ document.getElementById("about_button").addEventListener("click", function() {
 
 */
 
-document.getElementById("about_button").addEventListener("click", function() {
+document.getElementById("about_button").addEventListener("click", function () {
     window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth"
     });
 });
+
+

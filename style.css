@@ -57,7 +57,7 @@ body {
     width: 100vw;
     background-image: url(assets/sfondo_linea.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 
     overflow-x: hidden;
 }
@@ -87,16 +87,16 @@ body {
     justify-content: space-between;
     position: fixed;
     z-index: 100;
-    
+
     border-style: solid;
     border-radius: 2%;
     border-color: #D17440;
     border-top: #ffffff;
     border-left: #ffffff;
     border-right: #ffffff;
-    
+
     background-color: rgb(250, 243, 223);
-    
+
 }
 
 #testo_iniziale_senzaconfini,
@@ -190,7 +190,7 @@ button {
     font-size: 50pt;
 }
 
-#frank{
+#frank {
     position: relative;
     grid-area: 1/1;
     place-self: flex-start right;
@@ -215,7 +215,7 @@ button {
     line-height: 3.5rem;
 }
 
-#abdou{
+#abdou {
     position: relative;
     grid-area: 1/1;
     place-self: center left;
@@ -228,20 +228,20 @@ button {
     line-height: 3.5rem;
 }
 
-#senzaConfini{
+#senzaConfini {
     position: relative;
     grid-area: 1/1;
     place-self: center left;
 }
 
-#contattaci{
+#contattaci {
     position: relative;
     grid-area: 1/1;
     place-self: center left;
     top: 40%;
 }
 
-#footer{
+#footer {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     place-items: center;
@@ -249,40 +249,40 @@ button {
     font-style: normal;
     font-size: 15pt;
     color: #172742;
-    
+
 }
 
-#footer #senza_confini_footer{
+#footer #senza_confini_footer {
     position: relative;
     grid-area: 1/1;
     place-self: center center;
 }
 
-#footer #recap{
+#footer #recap {
     position: relative;
     grid-area: 2/1;
     place-self: center center;
-    
+
 }
 
-#footer #policy{
+#footer #policy {
     position: relative;
     grid-area: 2/2;
     place-self: center center;
-    
+
 }
 
-#footer #contatti_titolo{
+#footer #contatti_titolo {
     position: relative;
     grid-area: 1/3;
     place-self: center center;
 }
 
-#footer #contatti{
+#footer #contatti {
     position: relative;
     grid-area: 2/3;
     place-self: center center;
-    
+
 }
 
 /*----------------------------------IMMAGINI------------------------------*/
@@ -435,7 +435,7 @@ button {
 
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, 1fr);
-    place-items: center;    
+    place-items: center;
 }
 
 #world_stories #story_cloud {
@@ -464,7 +464,7 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#fine_sito{
+#fine_sito {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: repeat(auto-fit, 1fr);
@@ -473,7 +473,7 @@ button {
 }
 
 
-#hill{
+#hill {
     position: relative;
     height: 50%;
     width: 70%;
@@ -482,7 +482,7 @@ button {
     place-self: flex-end right;
 }
 
-#teamGoals{
+#teamGoals {
     position: relative;
     grid-area: 1/1;
     top: 8%;
@@ -491,7 +491,7 @@ button {
 
 }
 
-.icon{
+.icon {
     width: 5%;
     height: 5%;
 }
