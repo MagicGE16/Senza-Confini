@@ -63,6 +63,7 @@ p {
     color: #172742;
     z-index: 9;
     scale: 0.7;
+    margin: 0;
 }
 
 #torna_all_inizio_button{
@@ -91,12 +92,14 @@ p {
     background-image: url(/assets/frank/sfondo_storia.png);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 #linea_con_pallini {
     grid-column: 1 / 11;
     grid-row: 1 / 4;
     margin-left: 4rem;
+    margin-top: 3rem;
 }
 
 /*------------------------- TESTO -------------------------*/
@@ -113,10 +116,12 @@ button {
 #titolo_storia {
     position: relative;
     font-size: 75pt;
-    grid-area: 3/1;
+    grid-area: 2/1;
     place-self: center;
-    left: 25%;
-    bottom: 220%;
+    padding-left: 5rem;
+
+    left: 7%;
+    top: 10.5%;
 }
 
 #index {
@@ -127,28 +132,32 @@ button {
 
 #frank_arriva_in_italia {
     position: relative;
+    padding-top: 5rem;
     font-size: 25pt;
     grid-area: 2/2;
     place-self: center;
 
-    bottom: 39%;
-    left: 15%;
+    bottom: 38%;
+    left: 6%;
 }
 
 #frank_no_cittadinanza {
     position: relative;
-    grid-area: 3/4;
+    grid-area: 2/4;
     place-self: center;
-    right: 70%;
-    bottom: 260%;
+    right: 78.75%;
+    top: 0%;
+    padding-left: 5rem;
 }
 
 #frank_primi_due_anni {
     position: relative;
     grid-area: 2/5;
     place-self: center;
-    bottom: 3%;
-    left: 2%;
+    bottom: 0%;
+    right: 2.25%;
+
+    padding-bottom: 5rem;
 }
     
 
@@ -157,8 +166,10 @@ button {
     font-size: 25pt;
     grid-area: 2/5;
     place-self: center;
-    left: 61%;
-    bottom: 45%;
+    left: 57%;
+    bottom: 39%;
+
+    padding-bottom: 5rem;
 }
 
 #frank_prima_media {
@@ -166,8 +177,10 @@ button {
     font-size: 25pt;
     grid-area: 2/7;
     place-self: center;
-    left: 40%;
-    bottom: 22%;
+    left: 6.25%;
+    bottom: 19%;
+
+    padding-left: 5rem;
 }
     
 #frank_riesce_inserirsi {
@@ -175,8 +188,9 @@ button {
     font-size: 25pt;
     grid-area: 2/8;
     place-self: center;
-    left: 90%;
-    bottom: 0%;
+    left: 70%;
+    top: 3%;
+    padding-left: 5rem;
 }
     
 #frank_dopo_liceo {
@@ -184,8 +198,10 @@ button {
     font-size: 25pt;
     grid-area: 2/8;
     place-self: center;
-    left: 205%;
-    bottom: 43%;
+    left: 185.5%;
+    bottom: 39%;
+
+    padding-left: 5rem;
     }
     
 
@@ -194,8 +210,10 @@ button {
     font-size: 25pt;
     grid-area: 2/9;
     place-self: center;
-    left: 202%;
-    bottom: 47%;
+    left: 189%;
+    bottom: 42%;
+
+    padding-bottom: 5rem;
 }
     
 /*----------------------------------IMMAGINI ------------------------------*/
@@ -206,17 +224,17 @@ button {
     place-self: center;
     width: 80%;
     right: 5%;
-    bottom: 20%;
+    bottom: 18%;
 }
 
 #car_hill {
     position: relative;
     grid-area: 2/3;
     place-self: center;
-    width: 80%;
+    width: 75%;
 
-    right: 45%;
-    bottom: 10%;
+    right: 48%;
+    bottom: 3%;
 }
 
 
@@ -226,15 +244,15 @@ button {
     place-self: center;
     width: 90%;
     bottom: 25%;
-    right: 60%;
+    right: 63%;
 }
 
 #frank_window{
     position: relative;
     grid-area: 2/5;
 
-    right: 25%;
-    top: 12%;
+    right: 35%;
+    top: 15%;
     
     z-index: 2;
 }
@@ -244,8 +262,8 @@ button {
     grid-area: 2/5;
     width: 40%;
 
-    right: 12%;
-    top: 12%;
+    right: 22%;
+    top: 15%;
 
     z-index: 1;
 }
@@ -255,7 +273,7 @@ button {
     grid-area: 2/6;
 
     width: 90%;
-    bottom: 5%;
+    bottom: 1%;
 
     z-index: 2;
 }
@@ -267,7 +285,7 @@ button {
     rotate: 15deg;
 
     width: 50%;
-    bottom: 45%;
+    bottom: 42%;
     left: 23%;
 }
 
@@ -275,24 +293,26 @@ button {
     position: relative;
     grid-area: 2/6;
     place-self: center;
-    width: 50%;
+    width: 60%;
 
     left: 10%;
-    bottom: 17%;
+    bottom: 12%;
 }
 
 #frank_friends{
     position: relative;
     grid-area: 2/8;
 
-    right: 5%;
+    width: 105%;
+    right: 20%;
+    top: 2%;
 }
 
 #frank_rocket{
     position: relative;
     grid-area: 2/9;
 
-    left: 20%;
+    left: 8%;
 }
 
 #pencil_woman{
@@ -301,7 +321,7 @@ button {
     width: 100%;
 
     bottom: 30%;
-    left: 10%;
+    left: -2%;
 }
 
 #frank_car{
@@ -309,26 +329,32 @@ button {
     grid-area: 2/9;
 
     width: 80%;
-    top: 20%;
-    right: -150%;
+    top: 23%;
+    right: -136%;
 }
 
-#frank_ferrari{
+#tree{
     position: relative;
-    grid-area: 2/9;
+    grid-area: 2/10;
+    width: 30%;
+    left: 65%;
+    bottom: 3.75%;
+}
 
-    width: 110%;
-    left: 250%;
-    bottom: 8%;
-
-    z-index: 1;
+#frank{
+    position: relative;
+    grid-area: 2/10;
+    width: 20%;
+    left: 50%;
+    top: 20%;
 }
 
 #ferrari{
     position: relative;
-    grid-area: 2/9;
-    width: 70%;
-    left: 280%;
+    grid-area: 2/10;
+    width: 35%;
+    left: 62%;
+    bottom: 5%;
 }
 
 
@@ -343,4 +369,56 @@ button {
 .text_fade_in_anim_show {
     opacity: 1;
     filter: blur(0);
+}
+
+.text_swoop_right_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(80%);
+    transition: all 3s;
+}
+
+.text_swoop_right_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.text_swoop_up_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20%);
+    transition: all 3s;
+}
+
+.text_swoop_up_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.text_swoop_left_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.text_swoop_left_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.text_swoop_down_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-20%);
+    transition: all 3s;
+}
+
+.text_swoop_down_show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }

@@ -85,15 +85,6 @@ document.getElementById("storie_button").addEventListener("click", function () {
     });
 });
 
-/*
-document.getElementById("about_button").addEventListener("click", function() {
-    document.getElementById("mission_paragrafo").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
-*/
-
 document.getElementById("about_button").addEventListener("click", function () {
     window.scrollTo({
         top: document.body.scrollHeight,

@@ -1,3 +1,4 @@
+
 /*------------------------- VARI FONTS -------------------------*/
 
 @font-face {
@@ -18,15 +19,13 @@
     font-size: 55pt;
 }
 
+
 /*------------------------- BODY -------------------------*/
-
-
 
 body {
     margin: 0;
     padding: 0;
 }
-
 
 body {
     height: 100vh;
@@ -67,24 +66,6 @@ p {
     margin: 0;
 }
 
-#storia_container {
-    width: fit-content;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 3fr);
-    grid-template-columns: repeat(auto-fit, 10fr);
-    
-    background-image: url(assets/sumaya/sfondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#linea_con_pallini {
-    grid-column: 1 / 11;
-    grid-row: 2 / 4;
-    margin-left: 4rem;
-}
-
 #torna_all_inizio_button{
     position: fixed;
     bottom: 50px;
@@ -101,9 +82,22 @@ p {
 
 }
 
+#storia_container {
+    width: fit-content;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 2fr);
+    grid-template-columns: repeat(auto-fit, 10fr);
+    
+    background-image: url(assets/abdou/png/Artboard\ 1.png), url(/assets/abdou/png/Artboard\ 1\ copy\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 
 /*------------------------- TESTO -------------------------*/
+
 
 #testo_iniziale_senzaconfini,
 button {
@@ -115,198 +109,283 @@ button {
 }
 
 
+#index {
+    grid-area: 1/1;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
 #titolo_storia {
     position: relative;
     font-size: 75pt;
     grid-area: 2/1;
     place-self: center;
-    top: 5%;
+    padding-left: 4rem;
+
+    right: 7%;
+    bottom: 14%;
 }
 
-#index {
-    grid-area: 1/1;
-}
-
-#sumaya_nasce {
+#abdou_nasce {
     position: relative;
-    font-size: 25pt;
     grid-area: 2/2;
-    place-self: flex-start left;
-    left: 13%;
+    place-self: center;
+    bottom: 32%;
+    right: 23%;
+
+    padding-bottom: 5rem;
+}
+
+#abdou_ha_16_anni {
+    position: relative;
+    grid-area: 2/2;
+    place-self: center;
+    left: 73%;
+    top: 35%;
+
+    padding-bottom: 5rem;
+}
+
+#abdou_socializza {
+    position: relative;
+    grid-area: 2/3;
+    place-self: center;
+    left: 47.5%;
     top: 6%;
-    padding-bottom: 5rem;
+
+    padding-left: 5rem ;
 }
 
-#born_gif {
+#abdou_inizia_le_giornate {
     position: relative;
-    grid-area: 3/2;
-    width: 60%;
-    place-self: flex-start left;
-    bottom: 40%;
-    
-}
-
-#baby_gif {
-    position: relative;
-    grid-area: 3/3;
-    width: 60%;
+    grid-area: 2/3;
     place-self: center;
-    bottom: 55%;
-    right: 30%;
+    bottom: 19.5%;
+    left: 140%;
+    text-align: end;
+
+    padding-right: 5rem;
 }
 
-#sumaya_senza_cittadinanza {
-    position: relative;
-    font-size: 25pt;
-    grid-area: 3/4;
-    place-self: flex-start left;
-    right: 5%;
-    top: 15%;
-    padding-bottom: 5rem;
-}
-
-#nerd_gif {
-    position: relative;
-    grid-area: 2/4;
-    width: 60%;
-    place-self: center;
-    right: 10%;
-}
-
-#fumetti{
-    position: relative;
-    grid-area: 2/4;
-    width: 50%;
-    place-self: center;
-    right: 8%;
-    bottom: 28%;
-}
-
-#sumaya_frequenta_scuola {
-    position: relative;
-    font-size: 25pt;
-    grid-area: 2/5;
-    place-self: flex-start left;
-    padding-left: 5rem;
-
-    top: 5%;
-    right: 11.5%;
-}
-
-#study_gif {
-    position: relative;
-    grid-area: 3/5;
-    right: 40%;
-    bottom: 55%;
-    width: 60%;
-    place-self: flex-start right;
-}
-
-#together_gif {
+#abdou_no_cittadinanza {
     position: relative;
     grid-area: 2/5;
-    right: 5%;
-    bottom: 15%;
-    width: 50%;
-    place-self: flex-end right;
-}
-
-#sumaya_non_festosa {
-    position: relative;
-    font-size: 25pt;
-    grid-area: 2/6;
     place-self: center;
-    bottom: 20%;
-    right: 5%;
-    padding-bottom: 5rem;
-}
-
-#soccer_gif {
-    position: relative;
-    grid-area: 3/6;
-    width: 75%;
-    place-self: center;
-    bottom: 55%;
-    left: 35%;
-
-}
-
-#nuvole1{
-    position: relative;
-    grid-area: 3/6;
-    place-self: flex-start right;
-    bottom: 75%;
-    left: 35%;
-}
-
-
-#sumaya_mai_stata_bangladesh {
-    position: relative;
-    font-size: 25pt;
-    grid-area: 3/7;
-    left: 0.5%;
-    bottom: 72%;
-    place-self: center;
-
-    padding-left: 5rem;
-}
-
-#opinion_gif {
-    position: relative;
-    grid-area: 3/7;
-    width: 50%;
-    left: 45%;
-    bottom: 40%;
-    place-self: center;
-}
-
-#islam_gif {
-    position: relative;
-    grid-area: 2/7;
-    width: 50%;
-    left: 100%;
-    top: 20%;
-    place-self: center;
-}
-
-#sumaya_fuori_scuola {
-    position: relative;
-    font-size: 25pt;
-    grid-area: 3/8;
-    left: 51%;
-    bottom: 25%;
-    place-self: center;
+    left: 28.5%;
+    top: 34%;
 
     padding-bottom: 5rem;
 }
 
-#brother_gif {
+#abdou_fa_jogging {
     position: relative;
-    grid-area: 2/8;
-    width: 50%;
-    left: 60%;
-    bottom: 20%;
+    grid-area: 2/4;
     place-self: center;
+    left: 190%;
+    top: 14.3%;
+
+    padding-right: 5rem;
+    text-align: end;
 }
 
-#sumaya_no_hobby {
+#abdou_di_tanto_in_tanto {
     position: relative;
-    font-size: 25pt;
-    grid-area: 2/9;
-    left: 54%;
-    bottom: 20%;
+    grid-area: 2/4;
     place-self: center;
+    left: 252%;
+    bottom: 6.25%;
 
     padding-top: 5rem;
 }
 
-#ramadan_gif {
+#abdou_gruppo_di_amici {
     position: relative;
-    grid-area: 3/10;
-    width: 60%;
-    bottom: 50%;
-    right: 5%;
+    grid-area: 2/5;
     place-self: center;
+    left: 275.5%;
+    top: 33%;
+
+    padding-bottom: 5rem;
+}
+
+/*------------------------IMMAGINI------------------------*/
+
+#family{
+    position: relative;
+    grid-area: 2/2;
+    place-self: center;
+    right: 22%;
+    top: 5%;
+    
+}
+
+#plane{
+    position: relative;
+    grid-area: 2/2;
+    place-self: center;
+    width: 60%;
+
+    bottom: 45%;
+    left: 35%;
+}
+
+#abdou_reads{
+    position: relative;
+    grid-area: 2/2;
+    place-self: center;
+
+    left: 85%;
+    bottom: 5%;
+}
+
+#football{
+    position: relative;
+    grid-area: 2/3;
+    place-self: center;
+
+    width: 68%;
+
+    left: 55%;
+    bottom: 25%;
+}
+
+#ball{
+    position: relative;
+    grid-area: 2/3;
+    place-self: center;
+
+    left: 55%;
+
+    scale: 0.9;
+}
+
+#mosque{
+    position: relative;
+    grid-area: 2/4;
+    place-self: center;
+
+    width: 45%;
+
+    left: 40%;
+    bottom: 42%;
+}
+
+#abdou_prays{
+    position: relative;
+    grid-area: 2/4;
+    place-self: center;
+
+    width: 60%;
+
+    left: 30%;
+
+    top: 7%;
+}
+
+#flying_clock{
+    position: relative;
+    grid-area: 2/4;
+    place-self: center;
+
+    scale: 0.25;
+
+    bottom: 15%;
+}
+
+#pizza{
+    position: relative;
+    grid-area: 2/5;
+    place-self: center;
+
+    scale: 0.4;
+
+    top: 20%;
+
+    right: 25%;
+}
+
+#abdou_cooks{
+    position: relative;
+    grid-area: 2/5;
+    place-self: center;
+
+    width: 55%;
+
+    left: 25%;
+}
+
+#ship{
+    position: relative;
+    grid-area: 2/5;
+    place-self: center;
+
+    scale: 0.6;
+
+    bottom: 35%;
+    left: 45%;
+}
+
+#abdou_sport{
+    position: relative;
+    grid-area: 2/6;
+    place-self: center;
+
+    scale: 0.6;
+
+    bottom: 30%;
+    right: 5%;
+}
+
+#coaches{
+    position: relative;
+    grid-area: 2/7;
+    place-self: center;
+    scale: 0.6;
+
+    bottom: 32%;
+    right: 30%;
+}
+
+#sun{
+    position: relative;
+    grid-area: 2/7;
+    place-self: center;
+    scale: 0.4;
+
+    top: 23%;
+    right: 30%;
+}
+
+#abdou_pies{
+    position: relative;
+    grid-area: 2/7;
+    place-self: center;
+    scale: 0.55;
+
+    bottom: 25%;
+    left: 13%;
+}
+
+#abdou_dances{
+    position: relative;
+    grid-area: 2/8;
+    place-self: center;
+    scale: 0.8;
+
+    bottom: 30%;
+    right: 15%;
+}
+
+#party{
+    position: relative;
+    grid-area: 2/8;
+    place-self: center;
+    scale: 0.8;
+
+    bottom: 10%;
+    right: 15%;
 }
 
 /*---------------------------------- ANIMAZIONI ------------------------------*/
